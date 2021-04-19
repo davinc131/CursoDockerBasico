@@ -1,7 +1,12 @@
-version: '3'
+version: '3.9'
 
 volumes:
     dados:
+
+networks:
+    banco:
+    web:
+    fila:
 
 services:
     db:
@@ -14,6 +19,8 @@ services:
             # Scripts
             - ./scripts:/scripts
             - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+        networks:
+            - banco    
     frontend:
         image: nginx:1.13
         volumes:
@@ -24,10 +31,40 @@ services:
             - ./nginx:/etc/nginx/conf/
         ports:
             - 8080:80
+        networks:
+            - web
+        depends_on:
+            - app
     app: #Servidor
         image: python:3.6
+        environment:
+            - DB_NAME=email_sender
         volumes:
             # Caminho da Aplicação
             - ./app:/app
         working_dir: /app
-        command: bash ./app.sh       
+        command: bash ./app.sh
+        networks:
+            - banco
+            - web
+            - fila
+        depends_on:
+            - db
+            - queue
+        #ports:
+        #    - 8282:8282
+    queue:
+        image: redis:3.2
+        networks: 
+            - fila
+    worker:
+        build: worker
+        volumes:
+            # Worker
+        - ./worker:/worker  
+        working_dir: /worker
+        command: worker.py
+        networks: 
+            - fila
+        depends_on: 
+            - queue
