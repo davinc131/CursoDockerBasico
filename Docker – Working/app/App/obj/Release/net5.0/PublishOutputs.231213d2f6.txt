@@ -1,0 +1,5 @@
+C:\Users\davin\Documents\Curso Docker\Docker – Working\app\App\bin\Release\net5.0\publish\NetCore.Docker.exe
+C:\Users\davin\Documents\Curso Docker\Docker – Working\app\App\bin\Release\net5.0\publish\NetCore.Docker.dll
+C:\Users\davin\Documents\Curso Docker\Docker – Working\app\App\bin\Release\net5.0\publish\NetCore.Docker.deps.json
+C:\Users\davin\Documents\Curso Docker\Docker – Working\app\App\bin\Release\net5.0\publish\NetCore.Docker.runtimeconfig.json
+C:\Users\davin\Documents\Curso Docker\Docker – Working\app\App\bin\Release\net5.0\publish\NetCore.Docker.pdb

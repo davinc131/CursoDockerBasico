@@ -1,6 +1,6 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Docker" FOLDED="false" ID="ID_100159718" CREATED="1617560306178" MODIFIED="1618175154510" STYLE="oval">
+<node TEXT="Docker" FOLDED="false" ID="ID_100159718" CREATED="1617560306178" MODIFIED="1618864826028" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle">
     <properties fit_to_viewport="false" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
@@ -63,8 +63,8 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="2" RULE="ON_BRANCH_CREATION"/>
-<node TEXT="Capitulos do curso Docker" POSITION="right" ID="ID_1941675756" CREATED="1617560670552" MODIFIED="1618175069329" HGAP_QUANTITY="39.4999992400408 pt" VSHIFT_QUANTITY="-8.999999731779106 pt">
+<hook NAME="AutomaticEdgeColor" COUNTER="3" RULE="ON_BRANCH_CREATION"/>
+<node TEXT="Capitulos do curso Docker" FOLDED="true" POSITION="right" ID="ID_1941675756" CREATED="1617560670552" MODIFIED="1618864822112" HGAP_QUANTITY="34.999999374151244 pt" VSHIFT_QUANTITY="-41.24999877065424 pt">
 <edge COLOR="#ff0000"/>
 <node TEXT="Hello World" ID="ID_203318426" CREATED="1617561574270" MODIFIED="1618168557657" LINK="Hello%20World.docx" HGAP_QUANTITY="22.24999975413085 pt" VSHIFT_QUANTITY="-12.7499996200204 pt"><richcontent TYPE="DETAILS" HIDDEN="true">
 
@@ -461,7 +461,7 @@
 </richcontent>
 </node>
 </node>
-<node TEXT="Projeto de Envio de Email" ID="ID_983247819" CREATED="1618453705072" MODIFIED="1618610732298">
+<node TEXT="Projeto de Envio de Email" FOLDED="true" ID="ID_983247819" CREATED="1618453705072" MODIFIED="1618610732298">
 <node TEXT="Criar o banco de dados" FOLDED="true" ID="ID_1405950278" CREATED="1618456259298" MODIFIED="1618456268721">
 <node TEXT="png_5634442565684032592.png" ID="ID_176409866" CREATED="1618453722957" MODIFIED="1618453755533">
 <hook URI="Docker_files/png_5634442565684032592.png" SIZE="1.0" NAME="ExternalObject"/>
@@ -632,7 +632,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -651,7 +650,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="png_3621869627589475957.png" ID="ID_23895869" CREATED="1618798435310" MODIFIED="1618798442356" HGAP_QUANTITY="62.749998547136826 pt" VSHIFT_QUANTITY="44.999998658895535 pt">
 <hook URI="Docker_files/png_3621869627589475957.png" SIZE="1.0" NAME="ExternalObject"/>
@@ -915,6 +913,10 @@
 </node>
 </node>
 </node>
+</node>
+<node TEXT=".NET" POSITION="right" ID="ID_1408606563" CREATED="1618864781863" MODIFIED="1618864826026" HGAP_QUANTITY="37.999999284744284 pt" VSHIFT_QUANTITY="26.99999919533732 pt">
+<edge COLOR="#00ff00"/>
+<node TEXT="Repositório Oficial de Imagens .NET" ID="ID_1825598711" CREATED="1618864793133" MODIFIED="1618864838574" LINK="https://hub.docker.com/_/microsoft-dotnet/" HGAP_QUANTITY="29.749999530613437 pt" VSHIFT_QUANTITY="0.7499999776482589 pt"/>
 </node>
 </node>
 </map>
